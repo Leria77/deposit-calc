@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "func.h"
 int main(){
     int sum,srok,itog,month; 
     printf("%s","Vvedite summy vklada\n");
@@ -31,7 +32,8 @@ int main(){
             itog=sum*month/100*115;
         }
     printf("%s","Summa vklada=");
-    printf("%d",itog);
+    printf("%d\n",itog);
+    plus(sum,itog);
 }
      else 
       printf("%s","Proverte pravilnist dannix");
